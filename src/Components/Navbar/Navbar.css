@@ -1,0 +1,102 @@
+nav .nav-container{
+    padding: 0 50px;
+}
+
+nav .contain{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    padding-left: calc(width - (1320/2)) !important;
+    padding-right: calc(width - (1320/2)) !important;
+}
+
+nav .nav-container .nav-item .nav-link{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 13px;
+    letter-spacing: .04em;
+    color: var(--moderateBlack-color);
+}
+
+nav .nav-link.active {
+    font-weight: 900 !important;
+    color: var(--blue-color) !important;
+} 
+
+nav .nav-container .offcanvas-body{
+    margin-right: 25px;
+    padding-right: 25px;
+}
+
+
+@media screen and (max-width:991px) {
+    nav .nav-container .nav-item .nav-link{
+        font-size: 12px;
+        padding: 0 10px;
+        color: var(--moderateBlack-color);
+    }
+}
+@media screen and (max-width: 885px) {
+    nav .nav-container{
+        padding: 0;
+        width: 95%;
+        max-width: 95%;
+    }
+
+    nav .nav-container .nav-item .nav-link{
+        padding: 0 8px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    nav .nav-container .nav-item .nav-link{
+        padding: 0 4px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .navbar {
+        position: static !important;
+    }
+    nav .nav-container{
+        padding: 0;
+        width: 85%;
+        max-width: 85%;
+    }
+}
+
+ /* Handling Sidebar */
+
+@media screen and (max-width:768px) {
+    nav .nav-container .offcanvas-body{
+        padding: 80px 0;
+        display: table-cell;
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    nav .nav-container .offcanvas-body .navbar-nav{
+        height: 100%;
+        justify-content: center !important;
+    }
+
+    
+
+    nav .nav-container .navbar-nav .nav-link{
+        font-size: 14px;
+        padding: 15px 50px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: #ececec;
+        line-height: 1.3em;
+        height: auto;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: var(--heavy-silver-color);
+    }
+} 
+

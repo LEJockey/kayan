@@ -1,0 +1,58 @@
+.products .row{
+    padding: 50px 0;
+}
+
+.products figure img {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.products figcaption{
+    padding: 0;
+    padding-left: 10px;
+}
+
+.products figcaption h1{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: var(--black-color);
+}
+
+.products figcaption p{
+    margin: 0.85em 0;
+    font-size: 15px;
+    text-align: justify;
+    color: var(--black-color);
+
+}
+
+.product4{
+    max-width: 495px;
+    max-height: 400px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .products figcaption{
+        padding-left: 0;
+    }
+
+    .products figcaption h1{
+        font-size: 16px;
+    }
+
+    .products .col-md-6 {
+        margin-bottom: 20px !important;
+    }
+}
+
+
+
+
+
+

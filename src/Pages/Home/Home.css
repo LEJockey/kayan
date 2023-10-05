@@ -1,0 +1,536 @@
+/* main Carousel  */
+#carouselExampleFade{
+    height: 94vh !important;
+}
+
+#carouselExampleFade .carousel-caption{
+    top: 50%;
+    left: 10% !important;
+    right: 10% !important;
+    transform: translateY(-32%);
+}
+
+#carouselExampleFade .carousel-caption h1{
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.1em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-70%);
+    color: var(--white-color);
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+#carouselExampleFade .carousel-caption p{
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateY(70%);
+    transition: all .5s;
+}
+
+#carouselExampleFade .carousel-caption button{
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    opacity: 0;
+    border: none;
+    background-color: var(--green-color);
+    transition: all .5s;
+    transform: translateY(-50%);
+}
+
+#carouselExampleFade .active .carousel-caption h1, 
+#carouselExampleFade .active .carousel-caption p, 
+#carouselExampleFade .active .carousel-caption button{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+#carouselExampleFade .active .carousel-caption button:hover {
+    opacity: .9;
+}
+
+.item-1{
+    background-image: url(../../assests/home/main-slider/slide1.jpg);
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-2{
+    background-image: url(../../assests/home/main-slider/slide2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item-3{
+    background-image: url(../../assests/home/main-slider/slide3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+
+#carouselExampleFade .carousel-indicators [data-bs-target] {
+    opacity: 0;
+    width: 13.5px;
+    height: 13.5px;
+    /* border-radius: 14px; */
+    background-color: var(--blue-color);
+    transition: all .5s;
+}
+
+.carousel-indicators [data-bs-target]{
+    opacity: 0 !important;
+    width: 13.5px !important;
+    height: 13.5px !important;
+    /* border-radius: 14px; */
+    background-color: var(--blue-color) !important;
+    transition: all .5s !important;
+}
+
+#carouselExampleFade .carousel-indicators .active {
+    background-color: var(--green-color) !important;
+}
+
+#carouselExampleFade:hover .carousel-indicators [data-bs-target] {
+        opacity: 1 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption{
+        transform: translateY(-50%) !important;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .caption-1{
+        transform: translateY(-70%) !important;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    #carouselExampleFade .carousel-caption h1{
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1.1em;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+        opacity: 0;
+        transform: translateY(-70%);
+        color: var(--white-color);
+        text-transform: uppercase;
+        transition: all .5s;
+    }
+}
+
+
+/* main products */
+
+
+.main-products {
+    padding: 30px;
+}
+
+.main-products .product-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(74, 139, 113, .7);
+    opacity: .5;
+    position: absolute;
+    transition: all .5s;
+}
+
+.main-products .prod{
+    padding: 0;
+}
+
+.prod:hover .product-overlay{
+    display: none;
+}
+
+.main-products figcaption{
+    
+    vertical-align: middle;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    /* padding: 0 1.5em; */
+    width: 100%;
+    height: 100%;
+}
+
+.main-products figcaption .prod-caption{
+    padding: 0 50px;
+}
+
+.main-products figcaption .prod-caption h2{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.main-products figcaption .prod-caption p{ 
+    margin: 0.85em 0;
+    margin-bottom: 0;
+    font-size: 18.2px;
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 768px) {
+    .main-products .prod{
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Kayan Products */
+
+
+.kayan-products{
+    background-color: var(--green-color);
+}
+
+.kayan-products article{
+    padding: 80px;
+}
+
+.kayan-products article h1{
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--blue-color);
+}
+
+.kayan-products article h1 span{
+    font-size: 35px;
+    font-weight: 100;
+    color: var(--blue-color);
+}
+
+.kayan-products article p{
+    font-size: 18px;
+    margin: .85em 0;
+    text-align: justify;
+    color: var(--blue-color);
+}
+
+.kayan-products .products-desc{
+    padding-right: 80px !important;
+}
+
+.kayan-products .products-desc figure{
+    margin-bottom: 20px;
+}
+
+.kayan-products .products-desc figure img{ 
+    max-width: 100%;
+}
+
+.kayan-products .products-desc figcaption h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.kayan-products .products-desc figcaption p{
+    font-size: 12px;
+    margin: .85em 0;
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 1140px) {
+    .kayan-products article h1{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .kayan-products article h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .kayan-products article{
+        padding: 40px;
+    }
+    .kayan-products article h1{
+        font-size: 48px;
+    }
+    .kayan-products .products-desc{
+        padding: 0 40px 40px 40px !important;
+    }
+    .kayan-products .products-desc figcaption h1{
+        font-size: 16px;
+    }
+}
+
+/* About Kayan */
+
+.about-kyan{
+    background-image: url(../../assests/home/about-bg.jpg);
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.about-kyan .over-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0.5;
+    background-color: rgba(74,139,113,0.7);
+}
+
+.about-kyan .row{
+    padding: 50px 0;
+}
+
+.about-kyan .left h1{
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.about-kyan  .left p{
+    font-size: 18px;
+    margin: .85em 0;
+    text-align: justify;
+}
+
+.about-kyan .right .article h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-kyan .right .article p{
+    margin: .85em 0;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.about-kyan .right .sp-article{
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-kyan .col-md-6{
+        margin-bottom: 20px !important;
+    }
+    .about-kyan .left h1{  
+        font-size: 48px;
+    }
+    .about-kyan .right .article h1{
+        font-size: 32px;
+    }
+}
+
+
+/* Kayan Progress */
+
+.kyan-progress{
+    background-color: #e9f1ee;
+    background-image: url(../../assests/home/progess-bg.png);
+    background-repeat: no-repeat;
+    /* background-position: 100% 100%; */
+    background-attachment: scroll;
+    padding: 70px 0px !important;
+
+}
+
+.kyan-progress h1{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+
+.kyan-progress .row{
+    margin-top: 50px;
+}
+
+.kyan-progress .row img{
+    margin-bottom: 20px;
+}
+
+.kyan-progress .row .number{
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--green-color);
+    display: block;
+}
+
+.kyan-progress .row p{
+    font-size: 15px;
+    margin-bottom: 0;
+    color: var(--green-color);
+}
+
+.kyan-progress .row p>span{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 50px;
+    color: var(--green-color);
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .kyan-progress{
+        padding: 70px 50px !important;
+    }
+    .kyan-progress .row .col-md-3{
+        margin-bottom: 20px;
+    }
+}
+
+.sliding{
+    margin: 0;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+.sliding h2{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+/* Slide-one */
+.slide-one{
+    background-attachment: scroll;
+    background-image: url(../../assests/home/slides/1-.jpg);
+}
+.slide-two{
+    background-attachment: fixed;
+    background-image: url(../../assests/home/slides/2-.jpg);
+}
+.slide-three{
+    background-attachment: scroll;
+    background-image: url(../../assests/home/slides/3-.jpg);
+}
+.slide-four{
+    background-attachment: fixed;
+    background-image: url(../../assests/home/slides/4.jpg);
+}
+
+@media screen and (max-width: 786px) {
+    .sliding{
+        padding: 0 50px;
+    }
+}
+
+/* Recent Events */
+
+.recent-events{
+    padding: 50px 0;
+}
+
+.recent-events h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+
+.recent-events figcaption{
+    padding: 20px;
+    width: 90%;
+    bottom: -1px;
+    background-color: #f8f8f8;
+}
+
+.recent-events figcaption h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+.recent-events figcaption span{
+    font-size: 11px;
+    color: var(--silver-color);
+}
+
+.recent-events img{
+    opacity: .7;
+    transition: all .5s;
+}
+
+.recent-events figure:hover img{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+@media screen and (max-width: 786px) {
+    .recent-events{
+        padding: 50px 50px;
+    }
+    .recent-events h1{
+        font-size: 32px;
+    }
+}
+
+/* Kayan Partners*/
+
+.kayan-partners{
+    padding: 50px 0;
+}
+
+.kayan-partners h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 786px) {
+    .kayan-partners{
+        padding: 50px 50px;
+    }
+    .kayan-partners h1{
+        font-size: 32px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+.clients .fig1 {
+    background-image: url(../../assests/clients/about.jpg);
+    padding: 100px 100px 100px 100px !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.clients figcaption {
+    padding: 100px 80px 100px 80px !important;
+}
+
+.clients .row h1{
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.clients .row p{
+    font-size: 15px;
+    margin: .85em 0;
+    text-align: justify;
+    line-height: 1.65em;
+    color: var(--black-color);
+}

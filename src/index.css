@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Cairo:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,700;1,800&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --font-family: 'poppins',Helvetica,Arial,sans-serif;
+  --white-color: #fff;
+  --black-color: #000;
+  --blue-color: #0D236c;
+  --green-color:#7fbe41;
+  --silver-color: #969696;
+  --heavy-silver-color: #686868;
+  --lightBlack-color: #555;
+  --moderateBlack-color: #282828;
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+.bg-silver{
+  background-color: #eeeeee;
+}
+
+.box {
+  padding: 0 50px;
+  margin: 0;
+}
+
+@media screen and (max-width: 786px) {
+  .box{
+    padding: 0;
+    width: 85%;
+    max-width: 85%;
+  }
+}
+
+/* Handle Bg image of sections */
+
+.section-bg{
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url(./assests/entry-img.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: scroll;
+  width: 100%;
+  min-height: 500px;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.3;
+  background-color: var(--black-color);
+  background-image: url(./assests/dots-mini-light.png);
+  background-repeat: repeat;
+}
+
+.section-bg .section-content{
+  height: 500px;
+  padding: 88px 50px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-bg .section-content .section-head{
+  padding: 50px 0;
+  z-index: 5;
+}
+
+.section-bg .section-head h1{
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.section-bg .section-head h2{
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .section-bg .section-content {
+      padding: 0;
+  }
+
+  .section-bg .section-head h1{
+      font-size: 32px;
+  }
+
+}

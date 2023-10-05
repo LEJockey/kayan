@@ -1,0 +1,119 @@
+.about .fig1 {
+    background-image: url(../../assests/about/slide1.jpg);
+    padding: 100px 100px 100px 100px !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.about .fig2 {
+    background-image: url(../../assests/about/slide2.jpg);
+    padding: 100px 100px 100px 100px !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+
+.about figcaption {
+    padding: 100px 80px 100px 80px !important;
+}
+
+.cap2{
+    padding: 80px 80px !important;
+}
+
+.about .row h1{
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.about .row p{
+    font-size: 15px;
+    margin: .85em 0;
+    text-align: justify;
+    line-height: 1.65em;
+    color: var(--black-color);
+}
+
+.chairman{
+    background-image: url(../../assests/about/chairman/bg-chairman.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 100%;
+    min-height: 100px;
+}
+
+.chairman .row{
+    padding: 50px 0;
+}
+
+.chairman1, .chairman2{
+    margin: 0 1em ;
+}
+
+.chairman h1{
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.chairman img{
+    margin-bottom: 10px;
+}
+
+.chairman .chairman-details{
+    margin-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.chairman2 img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+    .flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .special-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    figcaption{
+        margin-bottom: 20px;
+    }
+    .special-flex{
+        flex-direction: column-reverse;
+    }
+    .special-container{
+        display: flex;
+        justify-content: center;
+    }
+    .chairman h1{
+        font-size: .8em;
+    }
+    .no-flex{
+        display:block !important;
+    }
+    .chairman1, .chairman2{
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,8 @@
+.customers .row{
+    padding: 50px 0;
+}
+@media screen and (max-width:992px) {
+    .customers .col-6{
+        margin-bottom: 20px;
+    }
+}
